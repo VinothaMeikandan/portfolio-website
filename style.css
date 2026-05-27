@@ -1,97 +1,54 @@
 body {
+    font-family: Arial;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #222;
-    color: white;
-    padding-bottom: 40px;
+    padding: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    align-items: center;
+    padding: 15px 30px;
+    background: #222;
+    color: white;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    list-style: none;
+    gap: 15px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px;
+    background: #f4f4f4;
 }
 
 .btn {
-    background: white;
-    color: black;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 120px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
 .project {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-footer {
-    background: #222;
+.project a {
+    margin-right: 10px;
+    text-decoration: none;
+    background: black;
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
+    padding: 5px 10px;
+    border-radius: 5px;
 }
