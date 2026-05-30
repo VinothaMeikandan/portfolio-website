@@ -27,7 +27,7 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 60px;
-    background: #f4f4f4;
+    background: #044a69;
 }
 
 .btn{
@@ -41,13 +41,13 @@ nav ul li a {
 }
 
 .btn:hover{
-    background:white;
+    background:#ffffff;
     color:#00adb5;
 }
 
 .btn2{
-    background:white;
-    color:#141e30;
+    background:#00adb5;
+    color:white;
     padding:12px 25px;
     text-decoration:none;
     border-radius:30px;
