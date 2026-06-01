@@ -374,19 +374,45 @@ nav ul li a:hover::after {
 .dot.yellow { background: #f59e0b; }
 .dot.green { background: #10b981; }
 
-.dashboard-title {
-    font-size: 0.75rem;
-    font-family: var(--font-heading);
+.dashboard-tabs {
+    display: flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.db-tab {
+    background: none;
+    border: none;
     color: var(--text-muted);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.db-tab:hover {
+    color: var(--text-bright);
+}
+
+.db-tab.active {
+    background: var(--primary-grad);
+    color: var(--bg-dark);
 }
 
 .dashboard-grid {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+.dashboard-grid.active {
+    display: grid;
 }
 
 .db-card {
@@ -515,6 +541,158 @@ nav ul li a:hover::after {
     color: var(--text-muted);
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
+}
+
+/* Education Section */
+#education {
+    padding-top: 5rem;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.edu-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.25rem;
+}
+
+.edu-badge {
+    align-self: flex-start;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.education-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.education-card h4 {
+    font-size: 1.15rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.edu-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.school-name {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.affiliation-badge {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.affiliation-badge i {
+    color: #f59e0b;
+}
+
+/* Experience Section */
+#experience {
+    padding-top: 5rem;
+}
+
+.experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.25rem;
+}
+
+.exp-badge {
+    align-self: flex-start;
+    background: rgba(99, 102, 241, 0.1);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.experience-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.experience-card h4 {
+    font-size: 1.15rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.exp-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.exp-list li {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.exp-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-weight: bold;
 }
 
 /* Skills Section */

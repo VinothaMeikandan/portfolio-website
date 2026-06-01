@@ -27,6 +27,8 @@
             </button>
             <ul>
                 <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
                 <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
                 <li><a href="#projects"><i class="fa-solid fa-chart-line"></i> Projects</a></li>
                 <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
@@ -63,41 +65,84 @@
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
                         </div>
-                        <span class="dashboard-title">Sales Analytics Overview</span>
+                        <div class="dashboard-tabs">
+                            <button class="db-tab active" data-target="db-supermarket">Supermarket</button>
+                            <button class="db-tab" data-target="db-superstore">Superstore</button>
+                        </div>
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
-                    <div class="dashboard-grid">
+
+                    <!-- Supermarket Sales Grid -->
+                    <div class="dashboard-grid db-content active" id="db-supermarket">
                         <div class="db-card">
                             <span>Total Revenue</span>
-                            <h3>$54,230 <span class="growth">+12%</span></h3>
+                            <h3>$322.4K <span class="growth">+14%</span></h3>
                         </div>
                         <div class="db-card">
-                            <span>Active Users</span>
-                            <h3>1,420 <span class="growth">+8%</span></h3>
+                            <span>Transactions</span>
+                            <h3>14,210 <span class="growth">+9%</span></h3>
                         </div>
                         <div class="db-card full-width">
-                            <span>Weekly Performance</span>
+                            <span>Weekly Sales Trend</span>
                             <div class="chart-container">
-                                <span class="chart-bar"></span>
-                                <span class="chart-bar"></span>
-                                <span class="chart-bar"></span>
-                                <span class="chart-bar"></span>
-                                <span class="chart-bar"></span>
+                                <span class="chart-bar" style="height: 40%; background: #6366f1;"></span>
+                                <span class="chart-bar" style="height: 65%; background: #4f46e5;"></span>
+                                <span class="chart-bar" style="height: 50%; background: #3b82f6;"></span>
+                                <span class="chart-bar" style="height: 85%; background: #10b981;"></span>
+                                <span class="chart-bar" style="height: 60%; background: #8b5cf6;"></span>
                             </div>
                         </div>
                         <div class="db-card full-width">
-                            <span>Project Completion Status</span>
+                            <span>Margin Analysis</span>
                             <div class="radial-chart-container">
                                 <div class="circle-chart">
                                     <svg viewBox="0 0 36 36">
                                         <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                        <path class="circle-progress" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle-progress" stroke-dasharray="92, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
                                     </svg>
-                                    <div class="circle-percentage">85%</div>
+                                    <div class="circle-percentage">92%</div>
                                 </div>
-                                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px;">
-                                    <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Data Analysis</span>
-                                    <span>SQL & Power BI Integration</span>
+                                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
+                                    <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Supermarket KPIs</span>
+                                    <span>Profit Margin Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Superstore Business Grid -->
+                    <div class="dashboard-grid db-content" id="db-superstore">
+                        <div class="db-card">
+                            <span>Total Profit</span>
+                            <h3>$84.5K <span class="growth" style="color: var(--accent-green);">+18%</span></h3>
+                        </div>
+                        <div class="db-card">
+                            <span>Orders Fulfilled</span>
+                            <h3>5,820 <span class="growth" style="color: var(--accent-green);">+11%</span></h3>
+                        </div>
+                        <div class="db-card full-width">
+                            <span>Weekly Orders Trend</span>
+                            <div class="chart-container">
+                                <span class="chart-bar" style="height: 70%; background: #a855f7;"></span>
+                                <span class="chart-bar" style="height: 55%; background: #6366f1;"></span>
+                                <span class="chart-bar" style="height: 90%; background: #10b981;"></span>
+                                <span class="chart-bar" style="height: 65%; background: #3b82f6;"></span>
+                                <span class="chart-bar" style="height: 80%; background: #ec4899;"></span>
+                            </div>
+                        </div>
+                        <div class="db-card full-width">
+                            <span>Category Distribution</span>
+                            <div class="radial-chart-container">
+                                <div class="circle-chart">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle-progress" stroke-dasharray="78, 100" style="stroke: #a855f7;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    </svg>
+                                    <div class="circle-percentage">78%</div>
+                                </div>
+                                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
+                                    <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Superstore Segment</span>
+                                    <span>Consumer & Corporate Focus</span>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +155,7 @@
         <section id="about" class="reveal">
             <div class="about-card glass-card">
                 <div class="about-icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
+                    <i class="fa-regular fa-id-card"></i>
                 </div>
                 <div class="about-text">
                     <h3>About Me</h3>
@@ -120,6 +165,45 @@
                     <p>
                         My objective is to build clean, functional, and visually impactful software systems and data dashboards that solve real-world problems and enable data-driven decision-making processes.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="reveal">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="education-card glass-card">
+                    <div class="edu-header">
+                        <div class="edu-badge"><i class="fa-solid fa-graduation-cap"></i> 2018 - 2022</div>
+                        <h3>Bachelor of Engineering (B.E.)</h3>
+                        <h4>Electronics and Communication Engineering</h4>
+                    </div>
+                    <div class="edu-body">
+                        <p class="school-name">Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College</p>
+                        <p class="affiliation-badge"><i class="fa-solid fa-award"></i> Affiliated to Anna University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="reveal">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-badge"><i class="fa-solid fa-briefcase"></i> Feb 2024 - Jan 2025</div>
+                        <h3>Graduate Trainee</h3>
+                        <h4>HCLTech</h4>
+                    </div>
+                    <div class="exp-body">
+                        <ul class="exp-list">
+                            <li>Collaborated within technology teams to design, evaluate, and deploy software code and data visualization architectures.</li>
+                            <li>Created custom business logic scripts and integrated them with frontend display controls.</li>
+                            <li>Conducted rigorous data auditing, code review, and debug execution testing cycles to maintain system integrity.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

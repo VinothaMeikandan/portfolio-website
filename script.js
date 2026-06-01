@@ -59,6 +59,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
+    // Interactive Dashboard Mockup Tabs
+    const dbTabs = document.querySelectorAll('.db-tab');
+    const dbContents = document.querySelectorAll('.db-content');
+
+    dbTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active classes
+            dbTabs.forEach(t => t.classList.remove('active'));
+            dbContents.forEach(c => c.classList.remove('active'));
+
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            // Find target content grid and add active class
+            const targetId = tab.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+
     // Dynamic Connecting Nodes Background Canvas
     const canvas = document.getElementById('bg-canvas');
     if (canvas) {
