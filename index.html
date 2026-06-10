@@ -1,434 +1,432 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Vinotha Meikandan - Data Analyst, Power BI Developer, and Java Full Stack Learner. Explore interactive analytics dashboards and web application projects.">
-    <title>Vinotha Meikandan | Portfolio</title>
-    <!-- Google Fonts & FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=1.1">
-</head>
-<body>
-
-    <!-- Dynamic background node network -->
-    <canvas id="bg-canvas"></canvas>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Professional portfolio of Vinotha Meikandan - Data Analyst, Power BI Developer, and Java Full Stack Learner. Explore interactive analytics dashboards and web application projects.">
+        <title>Vinotha Meikandan | Portfolio</title>
+        <!-- Google Fonts & FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css?v=1.1">
+    </head>
+    <body>
     
-    <!-- Colored accent glows for styling -->
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
-
-    <!-- Navigation Header -->
-    <header>
-        <nav id="navbar">
-            <span class="logo-text" onclick="window.scrollTo(0, 0)">VM.</span>
-            <button class="mobile-nav-toggle" aria-label="Toggle menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul>
-                <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
-                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
-                <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
-                <li><a href="#projects"><i class="fa-solid fa-chart-line"></i> Projects</a></li>
-                <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-wrapper">
-            <div class="hero-content reveal active">
-                <span class="badge">Available for opportunities</span>
-                <h1>Hi, I'm <span>Vinotha</span> 👋</h1>
-                <h2>Data Analyst | Power BI Developer | Java Full Stack Learner</h2>
-                <p>
-                    I specialize in transforming complex raw data into interactive, actionable dashboards using Power BI and SQL, while building robust full-stack web applications with Java and Spring Boot.
-                </p>
-                <div class="cta-group">
-                    <a href="Vinotha_Meikandan_Professional_Resume.pdf" target="_blank" class="btn" id="btn-resume">
-                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                    </a>
-                    <a href="https://github.com/VinothaMeikandan" target="_blank" class="btn2" id="btn-github">
-                        <i class="fa-brands fa-github"></i> GitHub Profile
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sleek interactive CSS dashboard graphic matching the Data Analyst branding -->
-            <div class="hero-visual reveal active">
-                <div class="dashboard-mockup glass-card">
-                    <div class="dashboard-header">
-                        <div class="dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="dashboard-tabs">
-                            <button class="db-tab active" data-target="db-supermarket">Supermarket</button>
-                            <button class="db-tab" data-target="db-superstore">Superstore</button>
-                            <button class="db-tab" data-target="db-hr">HR Analytics</button>
-                        </div>
-                        <i class="fa-solid fa-ellipsis"></i>
-                    </div>
-
-                    <!-- Supermarket Sales Grid -->
-                    <div class="dashboard-grid db-content active" id="db-supermarket">
-                        <div class="db-card">
-                            <span>Total Sales</span>
-                            <h3>9k <span class="growth">+14%</span></h3>
-                        </div>
-                        <div class="db-card">
-                            <span>Total Profit</span>
-                            <h3>2k<span class="growth">+9%</span></h3>
-                        </div>
-                        <div class="db-card full-width">
-                            <span>Weekly Sales Trend</span>
-                            <div class="chart-container">
-                                <span class="chart-bar" style="height: 40%; background: #6366f1;"></span>
-                                <span class="chart-bar" style="height: 65%; background: #4f46e5;"></span>
-                                <span class="chart-bar" style="height: 50%; background: #3b82f6;"></span>
-                                <span class="chart-bar" style="height: 85%; background: #10b981;"></span>
-                                <span class="chart-bar" style="height: 60%; background: #8b5cf6;"></span>
-                            </div>
-                        </div>
-                        <div class="db-card full-width">
-                            <span>Margin Analysis</span>
-                            <div class="radial-chart-container">
-                                <div class="circle-chart">
-                                    <svg viewBox="0 0 36 36">
-                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                        <path class="circle-progress" stroke-dasharray="92, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                    </svg>
-                                    <div class="circle-percentage">92%</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
-                                    <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Supermarket KPIs</span>
-                                    <span>Profit Margin Optimization</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Superstore Business Grid -->
-                    <div class="dashboard-grid db-content" id="db-superstore">
-                        <div class="db-card">
-                            <span>Total Sales</span>
-                            <h3>2.30M<span class="growth" style="color: var(--accent-green);">+18%</span></h3>
-                        </div>
-                        <div class="db-card">
-                            <span>Profit Margin Display</span>
-                            <h3>12.47%<span class="growth" style="color: var(--accent-green);">+11%</span></h3>
-                        </div>
-                        <div class="db-card full-width">
-                            <span>Weekly Orders Trend</span>
-                            <div class="chart-container">
-                                <span class="chart-bar" style="height: 70%; background: #a855f7;"></span>
-                                <span class="chart-bar" style="height: 55%; background: #6366f1;"></span>
-                                <span class="chart-bar" style="height: 90%; background: #10b981;"></span>
-                                <span class="chart-bar" style="height: 65%; background: #3b82f6;"></span>
-                                <span class="chart-bar" style="height: 80%; background: #ec4899;"></span>
-                            </div>
-                        </div>
-                        <div class="db-card full-width">
-                            <span>Category Distribution</span>
-                            <div class="radial-chart-container">
-                                <div class="circle-chart">
-                                    <svg viewBox="0 0 36 36">
-                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                        <path class="circle-progress" stroke-dasharray="78, 100" style="stroke: #a855f7;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                    </svg>
-                                    <div class="circle-percentage">78%</div>
-                                </div>
-                                <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
-                                    <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Superstore Segment</span>
-                                    <span>Consumer & Corporate Focus</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="dashboard-grid db-content" id="db-hr">
+        <!-- Dynamic background node network -->
+        <canvas id="bg-canvas"></canvas>
+        
+        <!-- Colored accent glows for styling -->
+        <div class="bg-glow-1"></div>
+        <div class="bg-glow-2"></div>
     
-        <div class="db-card">
-            <span>Total Employees</span>
-            <h3>1,000</h3>
-        </div>
+        <!-- Navigation Header -->
+        <header>
+            <nav id="navbar">
+                <span class="logo-text" onclick="window.scrollTo(0, 0)">VM.</span>
+                <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-chart-line"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     
-        <div class="db-card">
-            <span>Attrition Rate</span>
-            <h3>24.6% <span class="growth" style="color:#ef4444;">-246</span></h3>
-        </div>
-    
-        <div class="db-card full-width">
-            <span>Employee Distribution</span>
-    
-            <div class="chart-container">
-                <span class="chart-bar" style="height:35%; background:#3b82f6;"></span>
-                <span class="chart-bar" style="height:90%; background:#6366f1;"></span>
-                <span class="chart-bar" style="height:80%; background:#8b5cf6;"></span>
-                <span class="chart-bar" style="height:70%; background:#10b981;"></span>
-                <span class="chart-bar" style="height:50%; background:#ec4899;"></span>
-            </div>
-        </div>
-    
-        <div class="db-card full-width">
-            <span>Attrition Overview</span>
-    
-            <div class="radial-chart-container">
-    
-                <div class="circle-chart">
-                    <svg viewBox="0 0 36 36">
-                        <path class="circle-bg"
-                            d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-    
-                        <path class="circle-progress"
-                            stroke-dasharray="75,100"
-                            style="stroke:#ef4444;"
-                            d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                    </svg>
-    
-                    <div class="circle-percentage">
-                        24.6%
-                    </div>
-                </div>
-    
-                <div style="display:flex;flex-direction:column;gap:4px;">
-                    <span style="color:var(--text-bright);font-weight:600;">
-                        HR Dashboard
-                    </span>
-    
-                    <span>
-                        Attrition & Workforce Insights
-                    </span>
-                </div>
-    
-            </div>
-        </div>
-    
-    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="reveal">
-            <div class="about-card glass-card">
-                <div class="about-icon">
-                    <i class="fa-regular fa-id-card"></i>
-                </div>
-                <div class="about-text">
-                    <h3>About Me</h3>
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero-wrapper">
+                <div class="hero-content reveal active">
+                    <span class="badge">Available for opportunities</span>
+                    <h1>Hi, I'm <span>Vinotha</span> 👋</h1>
+                    <h2>Data Analyst | Power BI Developer | Java Full Stack Learner</h2>
                     <p>
-                        I am a highly motivated technology enthusiast passionate about working with data and full-stack software development. With a strong core foundation in SQL, Excel, and Power BI for data visualization, I am actively expanding my skillset into Java development and the Spring Boot ecosystem.
+                        I specialize in transforming complex raw data into interactive, actionable dashboards using Power BI and SQL, while building robust full-stack web applications with Java and Spring Boot.
                     </p>
+                    <div class="cta-group">
+                        <a href="Vinotha_Meikandan_Professional_Resume.pdf" target="_blank" class="btn" id="btn-resume">
+                            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                        </a>
+                        <a href="https://github.com/VinothaMeikandan" target="_blank" class="btn2" id="btn-github">
+                            <i class="fa-brands fa-github"></i> GitHub Profile
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Sleek interactive CSS dashboard graphic matching the Data Analyst branding -->
+                <div class="hero-visual reveal active">
+                    <div class="dashboard-mockup glass-card">
+                        <div class="dashboard-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="dashboard-tabs">
+                                <button class="db-tab active" data-target="db-supermarket">Supermarket</button>
+                                <button class="db-tab" data-target="db-superstore">Superstore</button>
+                                <button class="db-tab" data-target="db-hr">HR Analytics</button>
+                            </div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+    
+                       <div class="dashboard-grid db-content active" id="db-supermarket">
+                            <div class="db-card">
+                                <span>Total Sales</span>
+                                <h3>9K <span class="growth">+14%</span></h3>
+                            </div>
+                            <div class="db-card">
+                                <span>Total Profit</span>
+                                <h3>2K <span class="growth">+9%</span></h3>
+                            </div>
+                            <div class="db-card full-width">
+                                <span>Weekly Sales Trend</span>
+                                <div class="chart-container">
+                                    <span class="chart-bar" style="height: 40%; background: #6366f1;"></span>
+                                    <span class="chart-bar" style="height: 65%; background: #4f46e5;"></span>
+                                    <span class="chart-bar" style="height: 50%; background: #3b82f6;"></span>
+                                    <span class="chart-bar" style="height: 85%; background: #10b981;"></span>
+                                    <span class="chart-bar" style="height: 60%; background: #8b5cf6;"></span>
+                                </div>
+                            </div>
+                            <div class="db-card full-width">
+                                <span>Margin Analysis</span>
+                                <div class="radial-chart-container">
+                                    <div class="circle-chart">
+                                        <svg viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="circle-progress" stroke-dasharray="25, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <div class="circle-percentage">25.3%</div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
+                                        <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Supermarket KPIs</span>
+                                        <span>Profit Margin Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="dashboard-grid db-content" id="db-superstore">
+                            <div class="db-card">
+                                <span>Total Sales</span>
+                                <h3>2.30M <span class="growth" style="color: var(--accent-green);">+18%</span></h3>
+                            </div>
+                            <div class="db-card">
+                                <span>Profit Margin Display</span>
+                                <h3>12.47% <span class="growth" style="color: var(--accent-green);">+11%</span></h3>
+                            </div>
+                            <div class="db-card full-width">
+                                <span>Weekly Orders Trend</span>
+                                <div class="chart-container">
+                                    <span class="chart-bar" style="height: 70%; background: #a855f7;"></span>
+                                    <span class="chart-bar" style="height: 55%; background: #6366f1;"></span>
+                                    <span class="chart-bar" style="height: 90%; background: #10b981;"></span>
+                                    <span class="chart-bar" style="height: 65%; background: #3b82f6;"></span>
+                                    <span class="chart-bar" style="height: 80%; background: #ec4899;"></span>
+                                </div>
+                            </div>
+                            <div class="db-card full-width">
+                                <span>Category Distribution</span>
+                                <div class="radial-chart-container">
+                                    <div class="circle-chart">
+                                        <svg viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="circle-progress" stroke-dasharray="78, 100" style="stroke: #a855f7;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <div class="circle-percentage">78%</div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px; text-align: left;">
+                                        <span style="color: var(--text-bright); font-size: 0.8rem; font-weight: 600;">Superstore Segment</span>
+                                        <span>Consumer & Corporate Focus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="dashboard-grid db-content" id="db-hr">
+        
+            <div class="db-card">
+                <span>Total Employees</span>
+                <h3>1,000</h3>
+            </div>
+        
+            <div class="db-card">
+                <span>Attrition Rate</span>
+                <h3>24.6% <span class="growth" style="color:#ef4444;">-246</span></h3>
+            </div>
+        
+            <div class="db-card full-width">
+                <span>Employee Distribution</span>
+        
+                <div class="chart-container">
+                    <span class="chart-bar" style="height:35%; background:#3b82f6;"></span>
+                    <span class="chart-bar" style="height:90%; background:#6366f1;"></span>
+                    <span class="chart-bar" style="height:80%; background:#8b5cf6;"></span>
+                    <span class="chart-bar" style="height:70%; background:#10b981;"></span>
+                    <span class="chart-bar" style="height:50%; background:#ec4899;"></span>
+                </div>
+            </div>
+        
+            <div class="db-card full-width">
+                <span>Attrition Overview</span>
+        
+                <div class="radial-chart-container">
+        
+                    <div class="circle-chart">
+                        <svg viewBox="0 0 36 36">
+                            <path class="circle-bg"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+        
+                            <path class="circle-progress"
+                                stroke-dasharray="75,100"
+                                style="stroke:#ef4444;"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+        
+                        <div class="circle-percentage">
+                            24.6%
+                        </div>
+                    </div>
+        
+                    <div style="display:flex;flex-direction:column;gap:4px;">
+                        <span style="color:var(--text-bright);font-weight:600;">
+                            HR Dashboard
+                        </span>
+        
+                        <span>
+                            Attrition & Workforce Insights
+                        </span>
+                    </div>
+        
+                </div>
+            </div>
+        
+        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- About Section -->
+            <section id="about" class="reveal">
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fa-regular fa-id-card"></i>
+                    </div>
+                    <div class="about-text">
+                        <h3>About Me</h3>
+                        <p>
+                            I am a highly motivated technology enthusiast passionate about working with data and full-stack software development. With a strong core foundation in SQL, Excel, and Power BI for data visualization, I am actively expanding my skillset into Java development and the Spring Boot ecosystem.
+                        </p>
+                        <p>
+                            My objective is to build clean, functional, and visually impactful software systems and data dashboards that solve real-world problems and enable data-driven decision-making processes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Education Section -->
+            <section id="education" class="reveal">
+                <h2>Education</h2>
+                <div class="education-timeline">
+                    <div class="education-card glass-card">
+                        <div class="edu-header">
+                            <div class="edu-badge"><i class="fa-solid fa-graduation-cap"></i> 2018 - 2022</div>
+                            <h3>Bachelor of Engineering (B.E.)</h3>
+                            <h4>Electronics and Communication Engineering</h4>
+                        </div>
+                        <div class="edu-body">
+                            <p class="school-name">Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College</p>
+                            <p class="affiliation-badge"><i class="fa-solid fa-award"></i> Affiliated to Anna University</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Experience Section -->
+            <section id="experience" class="reveal">
+                <h2>Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-card glass-card">
+                        <div class="exp-header">
+                            <div class="exp-badge"><i class="fa-solid fa-briefcase"></i> Feb 2024 - Jan 2025</div>
+                            <h3>Graduate Trainee</h3>
+                            <h4>HCLTech</h4>
+                        </div>
+                        <div class="exp-body">
+                            <ul class="exp-list">
+                                <li>Collaborated within technology teams to design, evaluate, and deploy software code and data visualization architectures.</li>
+                                <li>Created custom business logic scripts and integrated them with frontend display controls.</li>
+                                <li>Conducted rigorous data auditing, code review, and debug execution testing cycles to maintain system integrity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Skills Section -->
+            <section id="skills" class="reveal">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <!-- Category 1: Analytics -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Data Analytics</h3>
+                        <div class="skills-list">
+                            <span><i class="fa-solid fa-chart-column" style="color: #f59e0b;"></i> Power BI</span>
+                            <span><i class="fa-solid fa-database" style="color: #3b82f6;"></i> SQL</span>
+                            <span><i class="fa-regular fa-file-excel" style="color: #10b981;"></i> Excel</span>
+                        </div>
+                    </div>
+    
+                    <!-- Category 2: Software Dev -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Full Stack Development</h3>
+                        <div class="skills-list">
+                            <span><i class="fa-brands fa-java" style="color: #e2433a;"></i> Java</span>
+                            <span><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot</span>
+                            <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML</span>
+                            <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS</span>
+                        </div>
+                    </div>
+    
+                    <!-- Category 3: Tools & Platforms -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Platforms & Tools</h3>
+                        <div class="skills-list">
+                            <span><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git</span>
+                            <span><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Projects Section -->
+            <section id="projects" class="reveal">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div>
+                            <div class="project-meta">
+                                <i class="fa-solid fa-chart-line project-icon"></i>
+                                <div class="project-tags">
+                                    <span class="tag">Power BI</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                            </div>
+                            <h3>Supermarket Sales Analytics</h3>
+                            <p>An interactive, insights-rich Power BI dashboard tracking supermarkets' key performance indicators (KPIs), profit analyses, and customer shopping trends.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VinothaMeikandan/Supermarket-Sales-Analytics-Dashboard" target="_blank" id="proj-supermarket-github">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div>
+                            <div class="project-meta">
+                                <i class="fa-solid fa-chart-pie project-icon"></i>
+                                <div class="project-tags">
+                                    <span class="tag">Power BI</span>
+                                    <span class="tag">Business Intelligence</span>
+                                </div>
+                            </div>
+                            <h3>Superstore Business Analytics</h3>
+                            <p>Comprehensive business dashboard visualising sales dynamics, performance margins, and profit-centric insights mapping the performance of a Superstore.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VinothaMeikandan/superstore-business-analytics-dashboard" target="_blank" id="proj-superstore-github">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div>
+                            <div class="project-meta">
+                                <i class="fa-solid fa-globe project-icon"></i>
+                                <div class="project-tags">
+                                    <span class="tag">HTML / CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                            </div>
+                            <h3>Interactive Portfolio</h3>
+                            <p>My sleek, modern, glassmorphic portfolio site designed with subtle hover transitions and full responsive layout capability.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VinothaMeikandan/portfolio-website" target="_blank" id="proj-portfolio-github">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <a href="https://vinothameikandan.github.io/portfolio-website/" target="_blank" id="proj-portfolio-live">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                            </a>
+                        </div>
+                    </div>
+            <!-- Project 4 -->
+            <div class="project-card glass-card">
+                <div>
+                    <div class="project-meta">
+                        <i class="fa-solid fa-users project-icon"></i>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">HR Analytics</span>
+                        </div>
+                    </div>
+                    <h3>HR Analytics Dashboard</h3>
                     <p>
-                        My objective is to build clean, functional, and visually impactful software systems and data dashboards that solve real-world problems and enable data-driven decision-making processes.
+                        Interactive HR Analytics Dashboard built in Power BI to analyze employee attrition,
+                        workforce demographics, job satisfaction, and key HR metrics, enabling data-driven
+                        workforce management and strategic decision-making.
                     </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="reveal">
-            <h2>Education</h2>
-            <div class="education-timeline">
-                <div class="education-card glass-card">
-                    <div class="edu-header">
-                        <div class="edu-badge"><i class="fa-solid fa-graduation-cap"></i> 2018 - 2022</div>
-                        <h3>Bachelor of Engineering (B.E.)</h3>
-                        <h4>Electronics and Communication Engineering</h4>
-                    </div>
-                    <div class="edu-body">
-                        <p class="school-name">Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College</p>
-                        <p class="affiliation-badge"><i class="fa-solid fa-award"></i> Affiliated to Anna University</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="reveal">
-            <h2>Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-card glass-card">
-                    <div class="exp-header">
-                        <div class="exp-badge"><i class="fa-solid fa-briefcase"></i> Feb 2024 - Jan 2025</div>
-                        <h3>Graduate Trainee</h3>
-                        <h4>HCLTech</h4>
-                    </div>
-                    <div class="exp-body">
-                        <ul class="exp-list">
-                            <li>Collaborated within technology teams to design, evaluate, and deploy software code and data visualization architectures.</li>
-                            <li>Created custom business logic scripts and integrated them with frontend display controls.</li>
-                            <li>Conducted rigorous data auditing, code review, and debug execution testing cycles to maintain system integrity.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="reveal">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <!-- Category 1: Analytics -->
-                <div class="skill-category glass-card">
-                    <h3><i class="fa-solid fa-chart-pie"></i> Data Analytics</h3>
-                    <div class="skills-list">
-                        <span><i class="fa-solid fa-chart-column" style="color: #f59e0b;"></i> Power BI</span>
-                        <span><i class="fa-solid fa-database" style="color: #3b82f6;"></i> SQL</span>
-                        <span><i class="fa-regular fa-file-excel" style="color: #10b981;"></i> Excel</span>
-                    </div>
-                </div>
-
-                <!-- Category 2: Software Dev -->
-                <div class="skill-category glass-card">
-                    <h3><i class="fa-solid fa-laptop-code"></i> Full Stack Development</h3>
-                    <div class="skills-list">
-                        <span><i class="fa-brands fa-java" style="color: #e2433a;"></i> Java</span>
-                        <span><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot</span>
-                        <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML</span>
-                        <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS</span>
-                    </div>
-                </div>
-
-                <!-- Category 3: Tools & Platforms -->
-                <div class="skill-category glass-card">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Platforms & Tools</h3>
-                    <div class="skills-list">
-                        <span><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git</span>
-                        <span><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="reveal">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card">
-                    <div>
-                        <div class="project-meta">
-                            <i class="fa-solid fa-chart-line project-icon"></i>
-                            <div class="project-tags">
-                                <span class="tag">Power BI</span>
-                                <span class="tag">Analytics</span>
-                            </div>
-                        </div>
-                        <h3>Supermarket Sales Analytics</h3>
-                        <p>An interactive, insights-rich Power BI dashboard tracking supermarkets' key performance indicators (KPIs), profit analyses, and customer shopping trends.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/VinothaMeikandan/Supermarket-Sales-Analytics-Dashboard" target="_blank" id="proj-supermarket-github">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glass-card">
-                    <div>
-                        <div class="project-meta">
-                            <i class="fa-solid fa-chart-pie project-icon"></i>
-                            <div class="project-tags">
-                                <span class="tag">Power BI</span>
-                                <span class="tag">Business Intelligence</span>
-                            </div>
-                        </div>
-                        <h3>Superstore Business Analytics</h3>
-                        <p>Comprehensive business dashboard visualising sales dynamics, performance margins, and profit-centric insights mapping the performance of a Superstore.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/VinothaMeikandan/superstore-business-analytics-dashboard" target="_blank" id="proj-superstore-github">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glass-card">
-                    <div>
-                        <div class="project-meta">
-                            <i class="fa-solid fa-globe project-icon"></i>
-                            <div class="project-tags">
-                                <span class="tag">HTML / CSS</span>
-                                <span class="tag">JS</span>
-                            </div>
-                        </div>
-                        <h3>Interactive Portfolio</h3>
-                        <p>My sleek, modern, glassmorphic portfolio site designed with subtle hover transitions and full responsive layout capability.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/VinothaMeikandan/portfolio-website" target="_blank" id="proj-portfolio-github">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
-                        <a href="https://vinothameikandan.github.io/portfolio-website/" target="_blank" id="proj-portfolio-live">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
-                        </a>
-                    </div>
-                </div>
-        <!-- Project 4 -->
-        <div class="project-card glass-card">
-            <div>
-                <div class="project-meta">
-                    <i class="fa-solid fa-users project-icon"></i>
-                    <div class="project-tags">
-                        <span class="tag">Power BI</span>
-                        <span class="tag">HR Analytics</span>
-                    </div>
-                </div>
-                <h3>HR Analytics Dashboard</h3>
-                <p>
-                    Interactive HR Analytics Dashboard built in Power BI to analyze employee attrition,
-                    workforce demographics, job satisfaction, and key HR metrics, enabling data-driven
-                    workforce management and strategic decision-making.
-                </p>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/VinothaMeikandan/HR-Analytics-Dashboard" target="_blank" id="proj-hranalytics-github">
-                    <i class="fa-brands fa-github"></i> Repository
-                </a>
-            </div>
-        </div>
-        </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <h2>Get In Touch</h2>
-            <div class="contact-card glass-card">
-                <h3>Let's create something together!</h3>
-                <p>
-                    If you are looking for a dedicated Data Analyst, a Power BI visual designer, or a collaborative Java developer learner, drop me an email!
-                </p>
-                <a href="mailto:vinothameikandan1513@gmail.com" class="btn" id="contact-email">
-                    <i class="fa-regular fa-envelope"></i> Send Email
-                </a>
-                <div class="social-links">
-                    <a href="https://github.com/VinothaMeikandan" target="_blank" class="social-btn" aria-label="GitHub Profile" id="social-github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vinotha-meikandan-ba4b1536a/" target="_blank" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                <div class="project-links">
+                    <a href="https://github.com/VinothaMeikandan/HR-Analytics-Dashboard" target="_blank" id="proj-hranalytics-github">
+                        <i class="fa-brands fa-github"></i> Repository
                     </a>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Vinotha Meikandan | Designed & Engineered with Care</p>
-    </footer>
-
-    <!-- Interactive script loading -->
-    <script src="script.js"></script>
-</body>
-</html>
+            </div>
+            </section>
+    
+            <!-- Contact Section -->
+            <section id="contact" class="reveal">
+                <h2>Get In Touch</h2>
+                <div class="contact-card glass-card">
+                    <h3>Let's create something together!</h3>
+                    <p>
+                        If you are looking for a dedicated Data Analyst, a Power BI visual designer, or a collaborative Java developer learner, drop me an email!
+                    </p>
+                    <a href="mailto:vinothameikandan1513@gmail.com" class="btn" id="contact-email">
+                        <i class="fa-regular fa-envelope"></i> Send Email
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/VinothaMeikandan" target="_blank" class="social-btn" aria-label="GitHub Profile" id="social-github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vinotha-meikandan-ba4b1536a/" target="_blank" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Vinotha Meikandan | Designed & Engineered with Care</p>
+        </footer>
+    
+        <!-- Interactive script loading -->
+        <script src="script.js"></script>
+    </body>
+    </html>
