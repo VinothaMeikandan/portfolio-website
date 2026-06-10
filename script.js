@@ -77,6 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetContent = document.getElementById(targetId);
             if (targetContent) {
                 targetContent.classList.add('active');
+                
+                // Optional: Trigger a micro-animation reset for bars inside the active grid
+                const bars = targetContent.querySelectorAll('.chart-bar');
+                bars.forEach(bar => {
+                    const currentHeight = bar.style.height;
+                    bar.style.height = '0';
+                    setTimeout(() => {
+                        bar.style.height = currentHeight;
+                    }, 50);
+                });
             }
         });
     });
