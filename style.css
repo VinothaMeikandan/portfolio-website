@@ -1027,3 +1027,18 @@ footer p {
         width: 100%;
     }
 }
+/* Custom Stroke Progress Overrides for Dashboard Gauges */
+#db-supermarket .circle-progress {
+    stroke-dasharray: 4.76, 100;
+    stroke: var(--accent-green);
+}
+
+#db-superstore .circle-progress {
+    stroke-dasharray: 12.47, 100;
+    stroke: var(--accent-purple);
+}
+
+#db-hr .circle-progress {
+    stroke-dasharray: 16.1, 100;
+    stroke: #ef4444; /* Standard Red for high-attrition visibility */
+}
