@@ -1077,4 +1077,23 @@ footer p {
         font-size: 0.65rem;
         padding: 6px 8px;
     }
+}.dashboard-preview{
+    padding:20px;
+    overflow:hidden;
+}
+
+.dashboard-preview img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.preview-info h3{
+    margin-bottom:10px;
+}
+
+.preview-info p{
+    color:var(--text-muted);
+    margin-bottom:20px;
 }
