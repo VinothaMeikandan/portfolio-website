@@ -1042,3 +1042,39 @@ footer p {
     stroke-dasharray: 16.1, 100;
     stroke: #ef4444; /* Standard Red for high-attrition visibility */
 }
+/* Mobile Dashboard Fix */
+@media (max-width: 768px) {
+
+    .dashboard-mockup {
+        max-width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .db-card.full-width {
+        grid-column: span 1;
+    }
+
+    .db-card {
+        min-height: 100px;
+    }
+
+    .chart-container {
+        height: 80px;
+    }
+
+    .dashboard-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .db-tab {
+        font-size: 0.65rem;
+        padding: 6px 8px;
+    }
+}
